@@ -1,0 +1,174 @@
+body{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #222222;
+}
+p{
+    margin:0;
+}
+h1{
+    font-weight: 900;
+}
+h3{
+    font-weight: 900;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    left: 409px;
+    width: 726px;
+    padding: 20px 0 80px 0;
+}
+.card{
+    /* height: 264px; */
+    width: 350px;
+    border-radius: 10px;
+    position: absolute;
+    left: 726px;
+    top: -160px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.2));
+}
+.hr-solid{
+    border-top: 1px solid;
+    border-color:#DCE4E9;
+    width: inherit;
+    margin: inherit;
+}
+.card-top{
+    display: flex;
+    flex-direction: column;   
+}
+.card-title{
+    line-height: 19.2px;
+    margin:inherit
+}
+.total-price{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 42px;
+    margin:inherit
+
+}
+.date{
+    color:#737373;
+    font-size: 14px;
+    line-height: 16.8px;
+    margin:inherit;
+    padding-bottom: 27px;
+
+}
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.bottom-price{
+    display: inherit;
+    justify-content: inherit;
+    padding-bottom: 15px;
+}
+.bottom-price-text{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #222222; 
+
+}
+.address{
+    display: flex;
+    flex-direction: row;
+}
+.amenity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.title{
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 37px;
+    padding: 20px 0;
+}
+.subtitle{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px 0;
+}
+.description{
+    padding-bottom: 40px;
+}
+.chip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 13px;
+    height: 33px;    
+    width: 102px;
+    line-height: 16.8px;
+    border-radius: 25px;
+    background-color: #222222;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner{
+    background-image: url("/images/property-desktop.png");
+    max-width:1920px;
+    height:492px; 
+}
+@media (max-width: 768px) {
+    .banner{
+        background-image: url("/images/property-mobile.png");
+        max-height: 520px; 
+    }
+    .card{
+        position: initial;
+        width: 709px;
+        border-radius:initial;
+        filter: initial;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color:#DCE4E9;
+        padding: initial;
+        /* width: 100vw; */
+    }
+    .card-top{
+        padding: 80px 0;
+    }
+    .card-bottom{
+        padding: 0 0 80px 0;
+    }
+    .date{
+        padding: initial;
+    }
+    .container{
+        position: initial;
+        padding: 65px 30px 150px 30px;
+    }
+    .amenity{
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .hr-solid{
+        display: none;
+    }
+  }

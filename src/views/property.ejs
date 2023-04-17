@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/property.css">
+ <title>Property Page</title>
+</head>
+<body>
+ <nav class="logo">
+ <!-- <a href="../home.html"><img  src="/assets/logo/logotipo.svg"/></a>  -->
+ </nav>
+ <div class="banner"></div>
+ <div class="container"> 
+     <div class="chip">Cód. <%= data.idOportunidade %></div>
+     <p class="title"><%= data.titulo %></p>
+     <div class="address" >
+         <p >
+             <img src="/icons/Caminho 39.svg" />
+             Rua Nebraska, 489 - Brooklin Novo - São Paulo - SP
+         </p>
+        </div>
+        <hr class="hr-solid"/>
+        <div class="card">
+           <div class="card-top">
+               <p class="card-title">Preço do imóvel</p>
+               <p class="total-price">R$900.000</p>
+               <p class="date">Atualizado em 10/04/2023</p>
+           </div>
+           <hr class="hr-solid"/>
+           <div class="card-bottom">
+               <div class="bottom-price">
+                   <p>Preço do m²</p> 
+                   <p class="bottom-price-text">R$7.438</p>
+               </div>
+               <div class="bottom-price">
+                   <p>Condomínio</p>
+                   <p class="bottom-price-text">R$2.253</p>
+               </div>
+               <div class="bottom-price">
+                   <p>IPTU</p>
+                   <p class="bottom-price-text">R$387</p>
+               </div>       
+           </div>  
+        </div>
+ <div class="amenity">
+    <div >
+        <img src="/icons/tipo_de_imovel.svg" class="icon"/>
+        <p>Apartamento</p>
+    </div>
+    <div>
+        <img src="/icons/measurement.svg" class="icon"/>
+        <p>123m²</p>
+    </div>
+    <div>
+        <img src="/icons/dormitorios.svg" class="icon"/>
+        <p><%= data.dormitorios %></p>
+    </div>
+    <div>
+        <img src="/icons/taxi.svg" class="icon"/>
+        <p><%= data.vagas %></p>
+    </div>
+    <div>
+        <img src="/icons/suite.svg" class="icon"/>
+        <p><%= data.suites %></p>
+    </div>
+    <div>
+        <img src="/icons/shower.svg" class="icon"/>
+        <p><%= data.banheiros %></p>
+    </div>
+ </div>
+<p class="subtitle">Apartamento à venda no <%= data.bairro %></p>
+<p class="description"><%= data.descricao %></p>
+<p><%= data.beneficios %></p>
+ </div>
+</body>
+</html>
