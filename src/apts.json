@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "idOportunidade": 1001,
+      "titulo": "Apartamento de 4 suites na Alameda Sarutaia"
+    },
+    {
+      "idOportunidade": 1002,
+      "titulo": "Apartamento de 2 Dormitórios na Travessa Acalanto Brasileiro"
+    },
+    {
+      "idOportunidade": 1003,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Nossa Senhora do Perdão"
+    },
+    {
+      "idOportunidade": 1004,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Doutor Antônio Ruggiero Júnior"
+    },
+    {
+      "idOportunidade": 1005,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Tulipa"
+    },
+    {
+      "idOportunidade": 1006,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Coronel Silva Castro"
+    },
+    {
+      "idOportunidade": 1007,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Dolomites"
+    },
+    {
+      "idOportunidade": 1008,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Araçaíba"
+    },
+    {
+      "idOportunidade": 1009,
+      "titulo": "Apartamento de 4 Dormitórios na Praça Deputado Norberto Mayer Filho"
+    },
+    {
+      "idOportunidade": 2000,
+      "titulo": "Apartamento de 4 Dormitórios na Rua Engenheiro Oscar Souza Telles"
+    },
+    {
+      "idOportunidade": 90,
+      "titulo": "Apartamento de 2 dormitórios na Al. Jauaperi"
+    },
+    {
+      "idOportunidade": 91,
+      "titulo": "Apartamento de 3 dormitórios na Graúna"
+    },
+    {
+      "idOportunidade": 92,
+      "titulo": "Apartamento de 4 dormitórios na Rua Domingos Augusto Setti"
+    },
+    {
+      "idOportunidade": 93,
+      "titulo": "Apartamento de 3 dormitórios na Domingos de Morais"
+    },
+    {
+      "idOportunidade": 98,
+      "titulo": "Apartamento de 3 dormitórios na Joaquim Eugênio de Lima"
+    },
+    {
+      "idOportunidade": 106,
+      "titulo": "Apartamento de 4 dormitórios na Caconde"
+    },
+    {
+      "idOportunidade": 124,
+      "titulo": "Apartamento de 3 dormitórios na Cayowaá"
+    },
+    {
+      "idOportunidade": 127,
+      "titulo": "Apartamento de 2 suítes na Rio Grande"
+    },
+    { "idOportunidade": 136, "titulo": "Casa de 3 dormitórios na Cayowaá" },
+    {
+      "idOportunidade": 160,
+      "titulo": "Apartamento de 3 dormitórios na Caiubí"
+    }
+  ]
+}
