@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/home.css" />
-    <script type="text/javascript">
-      document.getElementById("button").onclick = function () {
-        location.href = "/property.ejs";
-      };
+    <script>
+      function getProperty() {
+        var dropdown = document.getElementById("dropdown");
+        var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+        window.location.href = selectedOption;
+      }
     </script>
     <title>Home Page</title>
   </head>
   <body>
     <nav class="logo">
-      <a href="/home.ejs">
+      <a href="/api/apts">
         <img src="/logo/logotipo.svg" />
       </a>
     </nav>
@@ -24,12 +26,12 @@
       <div class="search">
         <div>
           <form name="properties" action="/property.ejs">
-            <select name="properties" id="properties" class="select">
+            <select name="properties" id="dropdown" class="select">
               <option disabled selected hidden class="select-text">
                 Selecione
               </option>
               <% for(let i=0;i<data.length/2;i++) { %>
-              <option>
+              <option value="/api/apts/<%= data[i].idOportunidade %>">
                 Cód: <%= data[i].idOportunidade %> - <%= data[i].titulo %>
               </option>
               <% } %>
@@ -37,17 +39,9 @@
           </form>
         </div>
         <div>
-          <button class="button" type="submit">
-            <a
-              href="/property.ejs"
-              style="text-decoration: none; color: inherit"
-              >Ver imovél</a
-            >
-          </button>
+          <button class="button" onclick="getProperty()">Ver imóvel</button>
         </div>
       </div>
     </div>
-
-    <!-- <script src="index.js"></script>    -->
   </body>
 </html>
