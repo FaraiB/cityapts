@@ -10,7 +10,7 @@
   <body>
     <nav class="logo">
       <a href="/api/apts">
-        <img src="/logo/logotipo.svg" />
+        <img src="/logo/logotipo.svg" height="150px" />
       </a>
     </nav>
     <div class="banner"></div>
@@ -20,29 +20,33 @@
       <div class="address">
         <p>
           <img src="/icons/Caminho 39.svg" />
-          Rua Nebraska, 489 - Brooklin Novo - São Paulo - SP
+          <!-- Rua Nebraska, 489 - Brooklin Novo - São Paulo - SP -->
+          <%= data.logradouro %>, <%= data.numeroResidencia %> - <%= data.bairro
+          %> - <%= data.cidade %> - <%= data.uf %>
         </p>
       </div>
       <hr class="hr-solid" />
       <div class="card">
         <div class="card-top">
           <p class="card-title">Preço do imóvel</p>
-          <p class="total-price">R$900.000</p>
-          <p class="date">Atualizado em 10/04/2023</p>
+          <p class="total-price"><%= data.preço %></p>
+          <p class="date">
+            Atualizado em <%= new Date().toLocaleDateString() %>
+          </p>
         </div>
         <hr class="hr-solid" />
         <div class="card-bottom">
           <div class="bottom-price">
             <p>Preço do m²</p>
-            <p class="bottom-price-text">R$7.438</p>
+            <p class="bottom-price-text">R$700</p>
           </div>
           <div class="bottom-price">
             <p>Condomínio</p>
-            <p class="bottom-price-text">R$2.253</p>
+            <p class="bottom-price-text"><%= data.condominio %></p>
           </div>
           <div class="bottom-price">
             <p>IPTU</p>
-            <p class="bottom-price-text">R$387</p>
+            <p class="bottom-price-text"><%= data.iptu %></p>
           </div>
         </div>
       </div>
@@ -53,7 +57,7 @@
         </div>
         <div>
           <img src="/icons/measurement.svg" class="icon" />
-          <p>123m²</p>
+          <p><%= data.size %>m²</p>
         </div>
         <div>
           <img src="/icons/dormitorios.svg" class="icon" />
