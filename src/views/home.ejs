@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="logo">
-      <a href="/api/apts">
+      <a href="/">
         <img src="/logo/logotipo.svg" height="150px" />
       </a>
     </nav>
@@ -31,7 +31,7 @@
                 Selecione
               </option>
               <% for(let i=0;i<data.length/2;i++) { %>
-              <option value="/api/apts/<%= data[i].idOportunidade %>">
+              <option value="/apts/<%= data[i].idOportunidade %>">
                 Cód: <%= data[i].idOportunidade %> - <%= data[i].titulo %>
               </option>
               <% } %>

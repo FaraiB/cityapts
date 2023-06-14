@@ -9,13 +9,13 @@ const url = "http://localhost:3001/api";
 
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
-  res.send("Hello world via express");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello world via express");
+// });
 app.use(express.static("assets"));
 app.use(express.static("content"));
 
-app.get("/api/apts", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const response = await axios.get(url);
     // res.json(response.data.data);
@@ -28,7 +28,7 @@ app.get("/api/apts", async (req, res) => {
   }
 });
 
-app.get("/api/apts/:id", async (req, res) => {
+app.get("/apts/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   try {
     const response = await axios.get(`${url}/id`);
